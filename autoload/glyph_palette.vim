@@ -43,7 +43,7 @@ function! s:apply() abort
   endif
   let w:glyph_palette_matches = map(
         \ copy(b:glyph_palette_palette),
-        \ { -> matchadd(v:key, v:val.' ') }, " fixing https://github.com/lambdalisue/glyph-palette.vim/issues/20
+        \ { -> matchadd(v:key, v:val.' ') },
         \)
 endfunction
 
